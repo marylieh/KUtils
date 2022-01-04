@@ -3,7 +3,7 @@
 This repository contains the code for the KUtils discord bot. This is a very basic bot to moderate and control
 your discord Server.
 
-##Features
+## Features
 KUtils prefix is `!`. For most commands a `/` command is also provided.
 
 The KUtils bot has the following features:
