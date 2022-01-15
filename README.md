@@ -12,7 +12,7 @@ The KUtils bot has the following features:
 * kick - members with the `kick` permission can kick users easily with this command.
 * invite - selected members can create invites in the current text channel.
 * purge - this command can bulk delete messages.
-* role - this command is work in progress.
+* role - members with the `manage_roles` permission can manage the members roles.
 * say - with this simple command members can write something that the bot should say.
 ## Bundled Bot
 
