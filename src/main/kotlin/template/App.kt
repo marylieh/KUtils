@@ -39,6 +39,7 @@ suspend fun main() {
             add(::AvatarExtension)
             add(::InviteExtension)
             add(::PurgeExtension)
+            add(::RoleExtension)
         }
     }
 
