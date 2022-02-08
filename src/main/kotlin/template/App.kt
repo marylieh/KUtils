@@ -23,7 +23,7 @@ suspend fun main() {
             prefix { default ->
                 if (guildId == SERVER_ID) {
                     // For the test server, we use ! as the command prefix
-                    "!"
+                    "?"
                 } else {
                     // For other servers, we use the configured default prefix
                     default
