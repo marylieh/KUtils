@@ -12,7 +12,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "template"
+rootProject.name = "KUtils"
 
 enableFeaturePreview("VERSION_CATALOGS")
 
