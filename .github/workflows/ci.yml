@@ -33,10 +33,3 @@ jobs:
         with:
           name: Main JAR
           path: build/libs/*-all.jar
-
-      - name: Upload artifacts (JARs)
-        uses: actions/upload-artifact@v4
-
-        with:
-          name: JARs
-          path: build/libs/*.jar
