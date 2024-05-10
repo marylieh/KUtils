@@ -1,4 +1,4 @@
-package template.extensions
+package de.marylieh.kutils.extensions
 
 import com.kotlindiscord.kord.extensions.commands.Arguments
 import com.kotlindiscord.kord.extensions.commands.converters.impl.coalescingDefaultingString
@@ -10,7 +10,7 @@ import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.chatCommand
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.utils.respond
-import template.TEST_SERVER_ID
+import de.marylieh.kutils.TEST_SERVER_ID
 
 class TestExtension : Extension() {
 	override val name = "test"

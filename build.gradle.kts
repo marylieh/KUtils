@@ -10,7 +10,7 @@ plugins {
 	id("io.gitlab.arturbosch.detekt")
 }
 
-group = "template"
+group = "de.marylieh.kutils"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -44,7 +44,7 @@ dependencies {
 }
 
 application {
-	mainClass.set("template.AppKt")
+	mainClass.set("de.marylieh.kutils.AppKt")
 }
 
 tasks.withType<KotlinCompile> {
@@ -57,7 +57,7 @@ tasks.withType<KotlinCompile> {
 tasks.jar {
 	manifest {
 		attributes(
-			"Main-Class" to "template.AppKt"
+			"Main-Class" to "de.marylieh.kutils.AppKt"
 		)
 	}
 }
