@@ -7,7 +7,6 @@ plugins {
 	kotlin("plugin.serialization")
 
 	id("com.github.johnrengelman.shadow")
-	id("io.gitlab.arturbosch.detekt")
 }
 
 group = "de.marylieh.kutils"
@@ -29,8 +28,6 @@ repositories {
 }
 
 dependencies {
-	detektPlugins(libs.detekt)
-
 	implementation(libs.kord.extensions)
 	implementation(libs.kotlin.stdlib)
 	implementation(libs.kx.ser)
@@ -66,10 +63,4 @@ java {
 	// Current LTS version of Java
 	sourceCompatibility = JavaVersion.VERSION_17
 	targetCompatibility = JavaVersion.VERSION_17
-}
-
-detekt {
-	buildUponDefaultConfig = true
-
-	config.from(rootProject.files("detekt.yml"))
 }
