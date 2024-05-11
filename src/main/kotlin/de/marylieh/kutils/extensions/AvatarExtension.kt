@@ -5,7 +5,7 @@ import com.kotlindiscord.kord.extensions.commands.converters.impl.user
 import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.chatCommand
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
-import de.marylieh.kutils.TEST_SERVER_ID
+import de.marylieh.kutils.SERVER_ID
 import dev.kord.core.behavior.channel.createEmbed
 
 class AvatarExtension : Extension() {
@@ -30,7 +30,7 @@ class AvatarExtension : Extension() {
 			name = "avatar"
 			description = "displays the avatar of the target user."
 
-			guild(TEST_SERVER_ID)
+			guild(SERVER_ID)
 
 			action {
 				channel.createEmbed {

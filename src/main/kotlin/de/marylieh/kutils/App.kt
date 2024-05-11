@@ -5,12 +5,10 @@ package de.marylieh.kutils
 
 import com.kotlindiscord.kord.extensions.ExtensibleBot
 import com.kotlindiscord.kord.extensions.utils.env
+import de.marylieh.kutils.extensions.*
 import dev.kord.common.entity.Snowflake
-import de.marylieh.kutils.extensions.TestExtension
-import de.marylieh.kutils.extensions.SayExtension
-import de.marylieh.kutils.extensions.AvatarExtension
 
-val TEST_SERVER_ID = Snowflake(
+val SERVER_ID = Snowflake(
 	env("TEST_SERVER").toLong()  // Get the test server ID from the env vars or a .env file
 )
 
@@ -23,7 +21,7 @@ suspend fun main() {
 			enabled = true
 
 			prefix { default ->
-				if (guildId == TEST_SERVER_ID) {
+				if (guildId == SERVER_ID) {
 					// For the test server, we use ! as the command prefix
 					"?"
 				} else {
@@ -37,6 +35,10 @@ suspend fun main() {
 			add(::TestExtension)
 			add(::SayExtension)
 			add(::AvatarExtension)
+			add(::BanExtension)
+			add(::InviteExtension)
+			add(::KickExtension)
+			add(::PurgeExtension)
 		}
 	}
 

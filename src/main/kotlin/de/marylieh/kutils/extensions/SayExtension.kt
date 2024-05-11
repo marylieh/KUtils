@@ -7,8 +7,7 @@ import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.chatCommand
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.utils.respond
-import de.marylieh.kutils.TEST_SERVER_ID
-import jdk.incubator.vector.VectorOperators.Test
+import de.marylieh.kutils.SERVER_ID
 
 class SayExtension : Extension() {
 
@@ -30,7 +29,7 @@ class SayExtension : Extension() {
 			name = "say"
 			description = "Type something the bot should say."
 
-			guild(TEST_SERVER_ID)
+			guild(SERVER_ID)
 
 			action {
 				respond {

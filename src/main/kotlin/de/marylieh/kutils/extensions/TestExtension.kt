@@ -10,7 +10,7 @@ import com.kotlindiscord.kord.extensions.extensions.Extension
 import com.kotlindiscord.kord.extensions.extensions.chatCommand
 import com.kotlindiscord.kord.extensions.extensions.publicSlashCommand
 import com.kotlindiscord.kord.extensions.utils.respond
-import de.marylieh.kutils.TEST_SERVER_ID
+import de.marylieh.kutils.SERVER_ID
 
 class TestExtension : Extension() {
 	override val name = "test"
@@ -61,7 +61,7 @@ class TestExtension : Extension() {
 			name = "slap"
 			description = "Ask the bot to slap another user"
 
-			guild(TEST_SERVER_ID)  // Otherwise it will take up to an hour to update
+			guild(SERVER_ID)  // Otherwise it will take up to an hour to update
 
 			action {
 				// Don't slap ourselves on request, slap the requester!
