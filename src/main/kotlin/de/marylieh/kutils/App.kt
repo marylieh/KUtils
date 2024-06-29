@@ -39,6 +39,7 @@ suspend fun main() {
 			add(::InviteExtension)
 			add(::KickExtension)
 			add(::PurgeExtension)
+			add(::AskExtension)
 		}
 	}
 
