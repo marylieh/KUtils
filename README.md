@@ -14,6 +14,7 @@ The KUtils bot has the following features:
 * purge - this command can bulk delete messages.
 * role - members with the `manage_roles` permission can manage the members roles.
 * say - with this simple command members can write something that the bot should say.
+* ask - Ask OpenAI's ChatGPT a question.
 ## Bundled Bot
 
 * `App.kt` includes a basic bot which uses environment variables (or variables in a `.env` file) for the testing guild
@@ -29,6 +30,7 @@ To test the bot, we recommend using a `.env` file that looks like the following:
 ```dotenv
 TOKEN=abc...
 TEST_SERVER=123...
+OPENAI_TOKEN=98htw39uhw9uhf9u
 ```
 
 Create this file, fill it out, and run the `run` gradle task for testing in development.
