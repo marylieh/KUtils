@@ -38,6 +38,9 @@ dependencies {
 	implementation(libs.logback)
 	implementation(libs.logback.groovy)
 	implementation(libs.logging)
+
+	// OpenAI API
+	implementation("com.aallam.openai", "openai-client", "3.8.1")
 }
 
 application {
